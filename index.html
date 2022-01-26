@@ -7,86 +7,107 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="모든 태그와 태그별로 설정 가능한 속성 정보입니다.">
         
-        <title>GIT TEST</title>
+        <title>Tag ZIP</title>
     </head>
     
     <body>
-        <h1>HTML start</h1>
+        <header>
+            <select>
+                <option>전체</option>
+                <option>제목</option>
+                <option>내용</option>
+            </select>
+            <div>
+                <input/>
+                <button>검색</button>
+            </div>
+        </header>
         
-        <h2>Tags</h2>
-        <article>
-            <h3><code>&lt;!--..--&gt;</code></h3>
-            <hr/>
-            <div>
-                <h4>Definition</h4>
-                <p>
-                    The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers.
-                </p>
-                <p>
-                    You can use comments to explain your code, which can help you when you edit the source code at a later date.
-                </p>
-                <p>
-                    This is especially useful if you have a lot of code.
-                </p>
-            </div>
-        </article>
-        <br/>
-        <br/>
-        <article>
-            <h3><code>&lt;!DOCTYPE&gt;</code></h3>
-            <hr/>
-            <div>
-                <h4>Definition</h4>
-                <p>
-                    All HTML documents must start with a <code>&lt;!DOCTYPE&gt;</code> declaration.
-                </p>
-                <p>
-                    The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.
-                </p>
-                <p>
-                    In older documents (HTML 4 or XHTML), the declaration is more complicated because the declaration must refer to a DTD (Document Type Definition).
-                </p>
-                <p>
-                    HTML 4.01:
-                </p>
-                <p>
-                    <code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</code>
-                </p>
-                <p>
-                    XHTML 1.1:
-                </p>
-                <p>
-                    <code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;</code>
-                </p>
-            </div>
-        </article>
-        <br/>
-        <br/>
-        <article>
-            <h3><code>&lt;a&gt;</code></h3>
-            <hr/>
-            <div>
-                <h4>Definition</h4>
-                <p>
-                    The <code>&lt;a&gt;</code> tag defines a hyperlink, which is used to link from one page to another.
-                </p>
-                <p>
-                    The most important attribute of the <code>&lt;a&gt;</code> element is the href attribute, which indicates the link's destination.
-                </p>
-                <p>
-                    
-                    By default, links will appear as follows in all browsers:
-                </p>
-                <p>
-                    An unvisited link is underlined and blue
-                </p>
-                <p>
-                    A visited link is underlined and purple
-                </p>
-                <p>
-                    An active link is underlined and red
-                </p>
-            </div>
-        </article>
+        <main>
+            <table>
+                <colgroup>
+                    <col width="15%"/>
+                    <col width="15%"/>
+                    <col width="*"/>
+                </colgroup>
+                
+                <thead>
+                    <tr>
+                        <th><button>화살표</button>태그명</th>
+                        <th><button>화살표</button>사용빈도</th>
+                        <th>정의</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;!--..--&gt;</code></td>
+                        <td>매우 높음</td>
+                        <td>
+                            <p>
+                                The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers.
+                            </p>
+                            <p>
+                                You can use comments to explain your code, which can help you when you edit the source code at a later date.
+                            </p>
+                            <p>
+                                This is especially useful if you have a lot of code.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;!DOCTYPE&gt;</code></td>
+                        <td>매우 높음</td>
+                        <td>
+                            <p>
+                                All HTML documents must start with a <code>&lt;!DOCTYPE&gt;</code> declaration.
+                            </p>
+                            <p>
+                                The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.
+                            </p>
+                            <p>
+                                In older documents (HTML 4 or XHTML), the declaration is more complicated because the declaration must refer to a DTD (Document Type Definition).
+                            </p>
+                            <p>
+                                HTML 4.01:
+                            </p>
+                            <p>
+                                <code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</code>
+                            </p>
+                            <p>
+                                XHTML 1.1:
+                            </p>
+                            <p>
+                                <code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;a&gt;</code></td>
+                        <td>높음</td>
+                        <td>
+                            <p>
+                                The <code>&lt;a&gt;</code> tag defines a hyperlink, which is used to link from one page to another.
+                            </p>
+                            <p>
+                                The most important attribute of the <code>&lt;a&gt;</code> element is the href attribute, which indicates the link's destination.
+                            </p>
+                            <p>
+                                
+                                By default, links will appear as follows in all browsers:
+                            </p>
+                            <p>
+                                An unvisited link is underlined and blue
+                            </p>
+                            <p>
+                                A visited link is underlined and purple
+                            </p>
+                            <p>
+                                An active link is underlined and red
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
     </body>
 </html>
